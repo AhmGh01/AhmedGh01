@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مدونتي - الصفحة الرئيسية</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.8}
+    header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+    nav a{margin-left:10px}
+    .post{padding:14px 16px;border:1px solid #eee;border-radius:12px;margin:12px 0}
+    .meta{color:#666;font-size:.95rem}
+    footer{margin-top:28px;color:#666}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>مدونتي</h1>
+      <p class="meta">ملاحظات وتجارب في <strong>البرمجة</strong> والتقنية.</p>
+    </div>
+    <nav>
+      <a href="./about.html">من أنا</a>
+      <a href="https://github.com/USERNAME">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>أحدث التدوينات</h2>
+
+    <article class="post">
+      <h3><a href="./posts/first-post.html">أول تدوينة</a></h3>
+      <div class="meta">2025-12-23 • 2 دقائق قراءة</div>
+      <p>ملخص سريع للتدوينة الأولى…</p>
+    </article>
+
+    <article class="post">
+      <h3><a href="./posts/second-post.html">تدوينة ثانية</a></h3>
+      <div class="meta">2025-12-20 • 3 دقائق قراءة</div>
+      <p>ملخص قصير…</p>
+    </article>
+  </main>
+
+  <footer>
+    <hr />
+    <p>© <span id="y"></span> مدونتي — مبنية على GitHub Pages.</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
